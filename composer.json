@@ -1,0 +1,25 @@
+{
+	"name": "ChorckPtyLtd/Chorck-SDK",
+	"description": "Chork SDK",
+	"type": "library",
+	"license": "BSD-3-Clause",
+	"keywords": [
+        "Chorck",
+        "Chorck-SDK"
+    ],
+	"authors": [{
+		"name": "Omair Aslam",
+		"email": "omair@chorck.com"
+	}],
+	"require": {
+		"php": ">=5.4",
+		"guzzlehttp/guzzle": "^5.3.1|^6.2.1",
+		"mtdowling/jmespath.php": "~2.2",
+		"composer/installers": "~1.0"
+	},
+	"require-dev": {
+        "silverstripe/serve": "^2",
+    },
+	"minimum-stability": "dev",
+    "prefer-stable": true
+}
