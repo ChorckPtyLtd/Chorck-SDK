@@ -18,7 +18,7 @@
 		"composer/installers": "~1.0"
 	},
 	"require-dev": {
-        "silverstripe/serve": "^2",
+        "silverstripe/serve": "^2"
     },
 	"minimum-stability": "dev",
     "prefer-stable": true
