@@ -1,25 +1,36 @@
 {
-	"name": "ChorckPtyLtd/Chorck-SDK",
-	"description": "Chork SDK",
-	"type": "library",
-	"license": "BSD-3-Clause",
-	"keywords": [
-        "Chorck",
-        "Chorck-SDK"
+    "name": "/",
+    "description": "",
+    "keywords": [
+        "swagger",
+        "php",
+        "sdk",
+        "api"
     ],
-	"authors": [{
-		"name": "Omair Aslam",
-		"email": "omair@chorck.com"
-	}],
-	"require": {
-		"php": ">=5.4",
-		"guzzlehttp/guzzle": "^5.3.1|^6.2.1",
-		"mtdowling/jmespath.php": "~2.2",
-		"composer/installers": "~1.0"
-	},
-	"require-dev": {
-        "silverstripe/serve": "^2"
+    "homepage": "http://swagger.io",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Swagger and contributors",
+            "homepage": "https://github.com/swagger-api/swagger-codegen"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
     },
-	"minimum-stability": "dev",
-    "prefer-stable": true
+    "require-dev": {
+        "phpunit/phpunit": "~4.8",
+        "satooshi/php-coveralls": "~1.0",
+        "squizlabs/php_codesniffer": "~2.6",
+        "friendsofphp/php-cs-fixer": "~1.12"
+    },
+    "autoload": {
+        "psr-4": { "Swagger\\Client\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Swagger\\Client\\" : "test/" }
+    }
 }
