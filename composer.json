@@ -1,6 +1,7 @@
 {
-    "name": "/",
-    "description": "",
+    "name": "ChorckPtyLtd/Chorck-SDK",
+    "description": "Chork SDK",
+    "type": "library",
     "keywords": [
         "swagger",
         "php",
@@ -9,12 +10,14 @@
     ],
     "homepage": "http://swagger.io",
     "license": "proprietary",
-    "authors": [
+    "authors": [{
+        "name": "Neil Gladwin",
+        "email": "neil@chorck.com"
+        },
         {
-            "name": "Swagger and contributors",
-            "homepage": "https://github.com/swagger-api/swagger-codegen"
-        }
-    ],
+        "name": "Omair Aslam",
+        "email": "omair@chorck.com"
+    }],
     "require": {
         "php": ">=5.4",
         "ext-curl": "*",
