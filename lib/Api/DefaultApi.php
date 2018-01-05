@@ -367,7 +367,8 @@ class DefaultApi
                 '/organisation/capability'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\AddCapabilityResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$response->data, $statusCode, $httpHeader];
+            //return [$this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\AddCapabilityResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -754,7 +755,13 @@ class DefaultApi
                 '/organisation/staff'
             );
 
-            return [$response->data, $statusCode, $httpHeader];
+            if(!empty($response->data)){
+                return [$response->data, $statusCode, $httpHeader];
+            }
+            else {
+                return ["invite to this email sent already", $statusCode, $httpHeader];
+            }
+
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
