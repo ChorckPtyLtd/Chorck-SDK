@@ -81,7 +81,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://dev-api.chorck.com/v1*
+All URIs are relative to *https://api.chorck.com/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
